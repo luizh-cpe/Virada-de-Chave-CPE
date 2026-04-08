@@ -201,36 +201,6 @@ footer{background:var(--dk);border-top:1px solid rgba(255,255,255,.06);padding:2
 /* RESPONSIVE */
 @media(max-width:1024px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:100px;}.hero-right{display:none;}.prizes-grid{grid-template-columns:1fr 1fr;}.deliver-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:768px){nav{padding:0 20px;}.nav-links{display:none;}section{padding:60px 20px;}.how-grid{grid-template-columns:1fr;}.deliver-grid{grid-template-columns:1fr;}.prizes-grid{grid-template-columns:1fr;}.prizes-row2{grid-template-columns:1fr;}.pages-grid{grid-template-columns:1fr;}.pages-section{padding:60px 20px;}.email-section{padding:60px 20px;}footer{padding:20px;}}
-
-/* METRICS */
-.metrics-section{background:var(--dk2);}
-.metrics-intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-bottom:56px;}
-.metrics-max{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;}
-.mx-chip{background:rgba(245,194,0,.08);border:1px solid rgba(245,194,0,.18);border-radius:10px;padding:12px 18px;text-align:center;}
-.mx-chip-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:30px;color:var(--y);line-height:1;}
-.mx-chip-label{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:3px;}
-.metrics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-.metrics-grid-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px;}
-.mc{background:var(--dk3);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:24px 22px;position:relative;overflow:hidden;transition:border-color .2s,transform .2s;}
-.mc:hover{border-color:rgba(245,194,0,.25);transform:translateY(-3px);}
-.mc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--y);transform:scaleX(0);transition:transform .35s;transform-origin:left;}
-.mc:hover::before{transform:scaleX(1);}
-.mc.bonus{border-color:rgba(245,194,0,.2);background:rgba(245,194,0,.04);}
-.mc-cat{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px;padding:3px 9px;border-radius:99px;display:inline-block;}
-.cat-time{background:rgba(59,130,246,.1);color:#93c5fd;border:1px solid rgba(59,130,246,.2);}
-.cat-impact{background:rgba(34,197,94,.08);color:#4ade80;border:1px solid rgba(34,197,94,.2);}
-.cat-inov{background:rgba(168,85,247,.1);color:#d8b4fe;border:1px solid rgba(168,85,247,.2);}
-.cat-bonus{background:rgba(245,194,0,.12);color:var(--y);border:1px solid rgba(245,194,0,.25);}
-.mc-title{font-weight:700;font-size:15px;color:#fff;margin-bottom:6px;}
-.mc-desc{font-size:13px;color:rgba(255,255,255,.4);line-height:1.55;margin-bottom:12px;}
-.mc-pts-row{display:flex;align-items:baseline;gap:6px;margin-top:auto;}
-.mc-pts-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:32px;color:var(--y);line-height:1;}
-.mc-pts-unit{font-size:12px;color:rgba(255,255,255,.3);font-weight:600;}
-.mc-pts-cap{font-size:11px;color:rgba(255,255,255,.25);margin-left:4px;}
-.metrics-note{background:rgba(245,194,0,.06);border:1px solid rgba(245,194,0,.15);border-radius:12px;padding:16px 20px;margin-top:20px;font-size:13px;color:rgba(255,255,255,.5);line-height:1.6;}
-.metrics-note strong{color:var(--y);}
-@media(max-width:1024px){.metrics-intro{grid-template-columns:1fr;gap:24px;}.metrics-grid{grid-template-columns:1fr 1fr;}.metrics-grid-bottom{grid-template-columns:1fr 1fr;}}
-@media(max-width:768px){.metrics-grid{grid-template-columns:1fr;}.metrics-grid-bottom{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -260,7 +230,6 @@ footer{background:var(--dk);border-top:1px solid rgba(255,255,255,.06);padding:2
     <li><a href="#como-funciona">Como funciona</a></li>
     <li><a href="#participantes">Participantes</a></li>
     <li><a href="#premios">Prêmios</a></li>
-    <li><a href="#metricas">Métricas</a></li>
     <li><a href="#regras">Regras</a></li>
     <li><a href="mailto:lara.romano@cpetecnologia.com.br">Enviar entregável</a></li>
   </ul>
@@ -270,7 +239,7 @@ footer{background:var(--dk);border-top:1px solid rgba(255,255,255,.06);padding:2
 <section class="hero">
   <div class="hero-grid"></div>
   <div class="hero-left">
-    <div class="hero-eyebrow"><div class="eyebrow-dot"></div>CPE Tecnologia · Competição Interna 2026</div>
+    <div class="hero-eyebrow"><div class="eyebrow-dot"></div>CPE Tecnologia · Competição Interna 2025</div>
     <h1 class="hero-title">
       Virada
       <span class="hero-title-de">de</span>
@@ -476,83 +445,6 @@ footer{background:var(--dk);border-top:1px solid rgba(255,255,255,.06);padding:2
   </div>
 </section>
 
-<!-- METRICS -->
-<section class="metrics-section" id="metricas">
-  <div class="sec-label">Pontuação</div>
-  <h2 class="sec-title">Métricas de avaliação</h2>
-
-  <div class="metrics-intro">
-    <p class="sec-desc" style="max-width:100%">A comissão avaliará cada iniciativa com base nestas métricas. A pontuação final é a soma das categorias base mais os bônus conquistados.</p>
-    <div class="metrics-max">
-      <div class="mx-chip"><div class="mx-chip-num">5</div><div class="mx-chip-label">métricas avaliadas</div></div>
-      <div class="mx-chip"><div class="mx-chip-num">110</div><div class="mx-chip-label">pontos máximos</div></div>
-    </div>
-  </div>
-
-  <div class="metrics-grid">
-
-    <div class="mc">
-      <div class="mc-cat cat-time">Economia de tempo</div>
-      <div class="mc-title">Horas economizadas</div>
-      <div class="mc-desc">Estimativa documentada do tempo salvo por tarefa. Ex: "Relatório: 2h → 20 min". Baseado em evidências reais.</div>
-      <div class="mc-pts-row">
-        <div class="mc-pts-num">1</div>
-        <div class="mc-pts-unit">pt / hora economizada</div>
-        <div class="mc-pts-cap">· máx. 30 pts</div>
-      </div>
-    </div>
-
-    <div class="mc">
-      <div class="mc-cat cat-time">Economia de tempo</div>
-      <div class="mc-title">Tarefas automatizadas</div>
-      <div class="mc-desc">Processos repetitivos eliminados ou simplificados com IA de forma contínua — não apenas uma vez.</div>
-      <div class="mc-pts-row">
-        <div class="mc-pts-num">5</div>
-        <div class="mc-pts-unit">pts / processo</div>
-        <div class="mc-pts-cap">· máx. 20 pts</div>
-      </div>
-    </div>
-
-    <div class="mc">
-      <div class="mc-cat cat-impact">Impacto no resultado</div>
-      <div class="mc-title">Qualidade do output</div>
-      <div class="mc-desc">Avaliação pela comissão: o resultado entregue com IA foi melhor, mais completo ou mais rápido que o anterior?</div>
-      <div class="mc-pts-row">
-        <div class="mc-pts-num">5×</div>
-        <div class="mc-pts-unit">nota 1–5</div>
-        <div class="mc-pts-cap">· máx. 25 pts</div>
-      </div>
-    </div>
-
-    <div class="mc">
-      <div class="mc-cat cat-impact">Impacto no resultado</div>
-      <div class="mc-title">Engajamento do time</div>
-      <div class="mc-desc">Outros colegas adotaram IA por influência direta do time? Cada colega "convertido" e engajado conta pontos.</div>
-      <div class="mc-pts-row">
-        <div class="mc-pts-num">5</div>
-        <div class="mc-pts-unit">pts / colega engajado</div>
-        <div class="mc-pts-cap">· máx. 15 pts</div>
-      </div>
-    </div>
-
-    <div class="mc" style="border-color:rgba(168,85,247,.25);">
-      <div class="mc-cat cat-inov">Inovação</div>
-      <div class="mc-title">Nota Inovação</div>
-      <div class="mc-desc">A comissão avalia o grau de criatividade, originalidade e potencial transformador da solução proposta para a CPE.</div>
-      <div class="mc-pts-row">
-        <div class="mc-pts-num">5×</div>
-        <div class="mc-pts-unit">nota 1–4</div>
-        <div class="mc-pts-cap">· máx. 20 pts</div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="metrics-note">
-    <strong>Como a pontuação funciona:</strong> A comissão avalia cada entregável após o prazo de 22/05/2026. Pontuações acima de 10 pts por item exigem evidência documentada. Em caso de empate, o critério de desempate é o maior número de gaveis válidos.
-  </div>
-</section>
-
 <!-- EMAIL CTA -->
 <section class="email-section">
   <div class="ec">
@@ -560,7 +452,7 @@ footer{background:var(--dk);border-top:1px solid rgba(255,255,255,.06);padding:2
     <h2 class="ec-title">Envie sua iniciativa</h2>
     <p class="ec-sub">Quando seu time estiver pronto, envie os entregáveis para o e-mail abaixo.</p>
     <div><div class="ec-addr"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="#F5C200" stroke-width="1.2"/><path d="M1 5.5l7 4.5 7-4.5" stroke="#F5C200" stroke-width="1.2"/></svg>lara.romano@cpetecnologia.com.br</div></div>
-    <div class="ec-dead">Prazo final: <strong>22 de maio de 2026 às 23h59</strong></div>
+    <div class="ec-dead">Prazo final: <strong>22 de maio de 2026</strong></div>
   </div>
 </section>
 
@@ -569,54 +461,10 @@ footer{background:var(--dk);border-top:1px solid rgba(255,255,255,.06);padding:2
   <div style="display:flex;align-items:center;gap:12px;">
     <div class="ft-brand">cpe <span>tecnologia</span></div>
     <div style="width:1px;height:18px;background:rgba(255,255,255,.08);"></div>
-    <div class="ft-copy">Competição Virada de Chave · 2026</div>
+    <div class="ft-copy">Competição Virada de Chave · 2025</div>
   </div>
   <div class="ft-copy">Dúvidas: lara.romano@cpetecnologia.com.br</div>
 </footer>
 
-<script>
-function updateCountdown() {
-  var target = new Date('2026-05-22T23:59:59');
-  var now = new Date();
-  var diff = target - now;
-  if (diff <= 0) {
-    document.getElementById('cd-days').textContent  = '00';
-    document.getElementById('cd-hours').textContent = '00';
-    document.getElementById('cd-mins').textContent  = '00';
-    document.getElementById('cd-secs').textContent  = '00';
-    return;
-  }
-  document.getElementById('cd-days').textContent  = String(Math.floor(diff / 86400000)).padStart(2,'0');
-  document.getElementById('cd-hours').textContent = String(Math.floor(diff % 86400000 / 3600000)).padStart(2,'0');
-  document.getElementById('cd-mins').textContent  = String(Math.floor(diff % 3600000 / 60000)).padStart(2,'0');
-  document.getElementById('cd-secs').textContent  = String(Math.floor(diff % 60000 / 1000)).padStart(2,'0');
-}
-updateCountdown();
-setInterval(updateCountdown, 1000);
-
-function filterTeams() {
-  var q = document.getElementById('searchInput').value.toLowerCase();
-  document.querySelectorAll('.tm-card').forEach(function(c) {
-    c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none';
-  });
-}
-
-var obs = new IntersectionObserver(function(entries) {
-  entries.forEach(function(e) {
-    if (e.isIntersecting) {
-      e.target.style.transition = 'opacity .5s ease, transform .5s ease';
-      e.target.style.opacity = '1';
-      e.target.style.transform = 'translateY(0)';
-      obs.unobserve(e.target);
-    }
-  });
-}, {threshold: 0.08});
-
-document.querySelectorAll('.del-card,.prize-card,.rule-card,.tm-card,.mc').forEach(function(el) {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(16px)';
-  obs.observe(el);
-});
-</script>
-</body>
-</html>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function updateCountdown(){var t=new Date('2026-05-22T23:59:59'),n=new Date(),d=t-n;if(d<=0){['days','hours','mins','secs'].forEach(function(id){document.getElementById('cd-'+id).textContent='00';});return;}document.getElementById('cd-days').textContent=String(Math.floor(d/86400000)).padStart(2,'0');document.getElementById('cd-hours').textContent=String(Math.floor(d%86400000/3600000)).padStart(2,'0');document.getElementById('cd-mins').textContent=String(Math.floor(
